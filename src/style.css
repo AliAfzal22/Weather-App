@@ -1,0 +1,81 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e0f7fa; /* Light blue background */
+}
+
+/* Form Styling */
+#weather-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input and Button */
+input[type="text"], button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    transition: all 0.3s ease-out;
+}
+
+/* Weather Data Display (Initially Hidden) */
+#weather-box {
+    /* display: none; */
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s linear, transform 0.5s ease-out;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 300px;
+}
+
+/* Show the weather data with animation */
+#weather-box.show {
+    /* display: block; */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Weather Icon */
+.icon{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#city-name {
+    font-size: 19px;
+}
