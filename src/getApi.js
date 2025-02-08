@@ -10,7 +10,7 @@ export  async function getWeather(location) {
         return filterData(jsonData,location);
     }
     catch (error) {
-        alert("dont fuck with me nigga");
+        alert("Please try again!");
         console.error(error);
         return null; // Return null in case of failure
 }
